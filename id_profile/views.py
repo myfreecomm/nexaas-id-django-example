@@ -12,4 +12,3 @@ def index(request, api_client: NexaasIDClient):
             'widget': api_client.user_widget_url,
         })
     return res or unsigned.redirect
-  
