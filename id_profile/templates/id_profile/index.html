@@ -2,9 +2,17 @@
 <html lang="en">
   <head>
     <title>Example application</title>
+    <script>
+      function initWidget(NexaasID) {
+        var wrapper = document.getElementById('widgetWrapper');
+        NexaasID.createUserWidget(wrapper);
+      }
+    </script>
+    <script src="{{widget}}&callback=initWidget"></script>
   </head>
+
   <body>
-    <div>
+    <div id="widgetWrapper">
       <h1>Hi {{user.full_name}}!</h1>
       <img src="{{user.picture}}" alt="{{user.email}}" />
     </div>
