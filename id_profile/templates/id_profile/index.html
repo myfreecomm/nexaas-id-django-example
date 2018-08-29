@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
     <title>Example application</title>
     <script>
@@ -14,17 +15,35 @@
   </head>
 
   <body>
-    <div id="widgetWrapper">
-      <h1>Hi {{user.full_name}}!</h1>
-      <img src="{{user.picture}}" alt="{{user.email}}" />
-    </div>
+
+    <nav class="main-nav">
+      <h1>Django App</h1>
+      <div id="widgetWrapper"></div>
+    </nav>
+
+    <img src="{{user.picture}}" alt="{{user.email}}" />
+    <h2>Hi {{user.full_name}}!</h2>
+
     <div>
-      <dl>
-        <dt>E-mail</dt><dd>{{user.email}}</dd>
-        <dt>Birth</dt><dd>{{user.birth}}</dd>
-        <dt>Language</dt><dd>{{user.language}}</dd>
-        <dt>Timezone</dt><dd>{{user.timezone}}</dd>
-      </dl>
+      <div>
+        <strong>E-mail</strong>
+        <p>{{user.email}}</p>
+      </div>
+
+      <div>
+        <strong>Birth</strong>
+        <p>{{user.birth}}</p>
+      </div>
+
+      <div>
+        <strong>Language</strong>
+        <p>{{user.language}}</p>
+      </div>
+
+      <div>
+        <strong>Timezone</strong>
+        <p>{{user.timezone}}</p>
+      </div>
     </div>
   </body>
 </html>

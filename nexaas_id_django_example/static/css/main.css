@@ -1,7 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0px 64px 10px 64px;
+  font-size: 14px;
+  font-family: sans-serif;
+  background-color: #F9FBFF;
 }
 
 #widgetWrapper {
-  float: right;
+  margin-left: auto;
+}
+
+.main-nav {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px #efefef;
 }
