@@ -1,5 +1,4 @@
 from django.shortcuts import redirect, render, reverse
-from requests.exceptions import HTTPError
 from nexaas_id_client import NexaasIDClient
 from nexaas_id_client.support.django.decorators import authorization_required
 from nexaas_id_client.support.django.helpers import signed_in
@@ -13,3 +12,4 @@ def index(request, api_client: NexaasIDClient):
             'widget': api_client.user_widget_url,
         })
     return res or unsigned.redirect
+  
