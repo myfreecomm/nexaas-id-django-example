@@ -7,8 +7,9 @@ Example code for connecting to Nexaas ID using Django.
 ```sh
 git clone https://github.com/myfreecomm/nexaas-id-django-example.git
 cd nexaas-id-django-example/
-python -mvenv .env
+python3 -mvenv .env
 source .env/bin/activate
+pip install -U pip
 ./setup.py develop
 cp .env.test .env.development
 echo 'DEBUG=1' >> .env.development
