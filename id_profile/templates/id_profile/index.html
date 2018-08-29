@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example application</title>
+  </head>
+  <body>
+    <div>
+      <h1>Hi {{user.full_name}}!</h1>
+      <img src="{{user.picture}}" alt="{{user.email}}" />
+    </div>
+    <div>
+      <dl>
+        <dt>E-mail</dt><dd>{{user.email}}</dd>
+        <dt>Birth</dt><dd>{{user.birth}}</dd>
+        <dt>Language</dt><dd>{{user.language}}</dd>
+        <dt>Timezone</dt><dd>{{user.timezone}}</dd>
+      </dl>
+    </div>
+  </body>
+</html>
