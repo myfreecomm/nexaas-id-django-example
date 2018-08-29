@@ -21,29 +21,31 @@
       <div id="widgetWrapper"></div>
     </nav>
 
-    <img src="{{user.picture}}" alt="{{user.email}}" />
-    <h2>Hi {{user.full_name}}!</h2>
-
-    <div>
-      <div>
-        <strong>E-mail</strong>
-        <p>{{user.email}}</p>
+    <article class="profile">
+      <div class="profile-image">
+        <img src="{{user.picture}}" alt="{{user.email}}" />
       </div>
+      <div class="profile-info">
+        <h2 class="header">
+          {{user.full_name}}
+          <span class="sub-header">{{user.email}}</span>
+        </h2>
 
-      <div>
-        <strong>Birth</strong>
-        <p>{{user.birth}}</p>
-      </div>
+        <div class="info">
+          <strong>Birth</strong>
+          <span>{{user.birth}}</span>
+        </div>
 
-      <div>
-        <strong>Language</strong>
-        <p>{{user.language}}</p>
-      </div>
+        <div class="info">
+          <strong>Language</strong>
+          <span>{{user.language}}</span>
+        </div>
 
-      <div>
-        <strong>Timezone</strong>
-        <p>{{user.timezone}}</p>
+        <div class="info">
+          <strong>Timezone</strong>
+          <span>{{user.timezone}}</span>
+        </div>
       </div>
-    </div>
+    </article>
   </body>
 </html>
