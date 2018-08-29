@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 def load_env():
     env = os.environ.get('ENV')
     env_file = Path('.') / '.env.{}'.format(env)
-    if not os.path.exists(env_file.as_posix()):
+    if not env_file.exists():
         env_file = Path('.') / '.env.development'
     load_dotenv(dotenv_path=env_file.as_posix())
 
