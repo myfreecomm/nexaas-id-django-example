@@ -10,9 +10,9 @@ cd nexaas-id-django-example/
 python -mvenv .env
 source .env/bin/activate
 ./setup.py develop
-./manage.py migrate
 cp .env.test .env.development
 echo 'DEBUG=1' >> .env.development
+./manage.py migrate
 ```
 
 You must edit `.env.development` in order to provide Nexaas ID client
