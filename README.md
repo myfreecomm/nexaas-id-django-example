@@ -11,7 +11,12 @@ python -mvenv .env
 source .env/bin/activate
 ./setup.py develop
 ./manage.py migrate
+cp .env.test .env.development
+echo 'DEBUG=1' >> .env.development
 ```
+
+You must edit `.env.development` in order to provide Nexaas ID client
+application credentials.
 
 ## Running server
 
