@@ -1,0 +1,27 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [Bearer 9fab3314d70124e792323196c9c89adb704cc07768fac48f4157fd89c41671f1]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: http://localhost:3000/api/v1/profile
+  response:
+    body: {string: "{\"id\":\"51dfb322-2c58-457a-b4e8-6de9d82c1316\",\"full_name\"\
+        :\"Rodrigo Cacilhas\",\"first_name\":\"Rodrigo\",\"last_name\":\"Cacilhas\"\
+        ,\"nickname\":\"cacilhas\",\"email\":\"rodrigo.cacilhas@nexaas.com\",\"birth\"\
+        :\"1975-11-20\",\"gender\":\"male\",\"language\":\"pt-br\",\"picture\":\"\
+        http://localhost:3000/images/avatar/51dfb322-2c58-457a-b4e8-6de9d82c1316?size=140\"\
+        ,\"timezone\":\"America/Sao_Paulo\",\"country\":\"BR\",\"city\":\"Niter\xF3\
+        i / RJ\",\"bio\":\"\"}"}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Content-Type: [application/json; charset=utf-8]
+      ETag: [W/"96bed3a003cd74ef9f34a6919041c156"]
+      X-Request-Id: [f5ae644d-dc98-4057-9272-d89f6f9de1d4]
+      X-Runtime: ['0.013090']
+    status: {code: 200, message: OK}
+version: 1
