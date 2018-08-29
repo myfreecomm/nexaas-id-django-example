@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 
+from pathlib import Path
 from setuptools import setup, find_packages
+
+with (Path(__file__).parent / 'README.md').open() as fp:
+    long_description = fp.read()
 
 
 setup(
@@ -8,12 +12,13 @@ setup(
     version='1.0',
     author='Rodrigo Cacilhas',
     author_email='rodrigo.cacilhas@nexaas.com',
-    description='',
+    description='Nexaas ID Django example',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     license='Proprietary License',
     keywords='nexaas-id profile',
-    url='',
+    url='https://github.com/myfreecomm/nexaas-id-django-example',
     packages=find_packages(),
-    long_description='',
     install_requires=[
         'django==2.0.0',
         'nexaas-id-client==1.0',
