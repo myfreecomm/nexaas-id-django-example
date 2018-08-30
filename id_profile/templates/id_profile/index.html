@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
     <title>Example application</title>
     <script>
@@ -14,17 +15,41 @@
   </head>
 
   <body>
-    <div id="widgetWrapper">
-      <h1>Hi {{user.full_name}}!</h1>
-      <img src="{{user.picture}}" alt="{{user.email}}" />
-    </div>
-    <div>
-      <dl>
-        <dt>E-mail</dt><dd>{{user.email}}</dd>
-        <dt>Birth</dt><dd>{{user.birth}}</dd>
-        <dt>Language</dt><dd>{{user.language}}</dd>
-        <dt>Timezone</dt><dd>{{user.timezone}}</dd>
-      </dl>
-    </div>
+
+    <nav class="main-nav">
+      <div class="wrapper">
+        <h1>Django App</h1>
+        <div id="widgetWrapper"></div>
+      </div>
+    </nav>
+
+    <article class="profile">
+      <div class="profile-image">
+        <img src="{{user.picture}}" alt="{{user.email}}" />
+      </div>
+      <div class="profile-info">
+        <h2 class="header">
+          {{user.full_name}}
+          <span class="sub-header">{{user.email}}</span>
+        </h2>
+
+        <hr class="divider" />
+
+        <div class="info">
+          <span>Birth</span>
+          <strong class="info-value">{{user.birth}}</strong>
+        </div>
+
+        <div class="info">
+          <span>Language</span>
+          <strong class="info-value">{{user.language}}</strong>
+        </div>
+
+        <div class="info">
+          <span>Timezone</span>
+          <strong class="info-value">{{user.timezone}}</strong>
+        </div>
+      </div>
+    </article>
   </body>
 </html>
