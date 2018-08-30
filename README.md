@@ -29,7 +29,7 @@ configure your application like the following example:
 
 <div align="center">
   <img alt="Example"
-       src="https://raw.githubusercontent.com/myfreecomm/nexaas-id-django-example/master/nexaas_id_django_example/static/example.jpg" />
+       src="https://github.com/myfreecomm/nexaas-id-django-example/raw/master/nexaas_id_django_example/static/example.jpg" />
 </div>
 
 Links for development area:
