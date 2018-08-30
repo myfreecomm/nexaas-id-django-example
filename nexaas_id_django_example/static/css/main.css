@@ -6,7 +6,8 @@
 
 body {
   font-size: 13px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #47494C;
   background-color: #F9FBFF;
 }
 
@@ -15,11 +16,17 @@ body {
 }
 
 .main-nav {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
   padding: 10px;
+  color: #47494C;
+  border-bottom: 1px solid #E6EAF2;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .profile {
@@ -29,12 +36,11 @@ body {
   background-color: #fff;
   box-shadow: 0 24px 40px 0 rgba(0, 0, 0, 0.16);
   border-radius: 4px;
-  /*box-shadow: 0 0 100px rgba(0,0,0, .3);*/
 }
 
 .profile-image {
   position: relative;
-  min-height: 150px;
+  min-height: 120px;
   background-image: url('https://37.media.tumblr.com/88cbce9265c55a70a753beb0d6ecc2cd/tumblr_n8gxzn78qH1st5lhmo1_1280.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,6 +52,8 @@ body {
   width: 100%;
   height: 100%;
   background: linear-gradient(to top, rgb(5,85,134), rgba(181,181,181, 0.1));
+  mix-blend-mode: multiply;
+  filter: grayscale(100%) contrast(1);
 }
 
 .profile-image > img {
