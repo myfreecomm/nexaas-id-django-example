@@ -19,6 +19,25 @@ echo 'DEBUG=1' >> .env.development
 You must edit `.env.development` in order to provide Nexaas ID client
 application credentials.
 
+### Configuring Test Application on Nexaas ID development area
+
+In [Nexaas ID development area](http://localhost:3000/applications), create and
+configure your application like the following example:
+
+- Sign out URL for Widget: `http://localhost:8000/oauth/signout/`
+- Callback URI: `http://localhost:8000/oauth/callback/`
+
+<div align="center">
+  <img alt="Example"
+       src="https://raw.githubusercontent.com/myfreecomm/nexaas-id-django-example/master/nexaas_id_django_example/static/example.jpg" />
+</div>
+
+Links for development area:
+
+- [Localhost](http://localhost:3000/applications)
+- [Sandbox](https://sandbox.id.nexaas.com/applications)
+- [Production](https://id.nexaas.com/applications)
+
 ## Running server
 
 ```sh
@@ -30,5 +49,5 @@ source .env/bin/activate
 Use:
 
 ```sh
-sensible-browser http://127.0.0.1:8000/
+sensible-browser http://localhost:8000/
 ```
