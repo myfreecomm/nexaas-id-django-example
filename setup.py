@@ -21,12 +21,8 @@ setup(
     packages=find_packages(),
     install_requires=[
         'django==2.0.0',
-        'nexaas-id-client==1.0',
+        'nexaas-id-client==1.0.1',
         'python-dotenv==0.9.1',
-    ],
-    dependency_links=[
-        'git+https://github.com/myfreecomm/nexaas-id-client-python.git'
-        '#egg=nexaas-id-client-1.0',
     ],
     tests_require=[
         'pycodestyle==2.4.0',
